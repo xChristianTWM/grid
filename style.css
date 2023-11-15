@@ -3,14 +3,44 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     grid-column-start: span 2;
-    height: 80%;
+    /* height: 800px; */
     width: 80%;
-    text-align: center;
-    margin: auto;
+    /* margin: auto;
+    margin-top: 50px; */
+    margin: 100px 0;
 }
 
-.container div:first-child{
+.titulo {
+    text-align: left;
+    margin-left: 10px; /* Puedes ajustar este valor según tus preferencias de espaciado */
+    font-size: 25px; /* Puedes ajustar este valor según el tamaño de fuente deseado */
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.subtitulo-member{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.etiquetas-member{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.etiquetas-member div{
+    /* display: flex;
+    flex-direction: column; */
     background: lightgreen;
+    border: solid black;
+    border-radius: 50px;
+}
+
+
+.container div:first-child{
+
     grid-column-start: span 1;
     grid-row-start: span 2;
 }
@@ -19,10 +49,12 @@
     background: #fbfbfb;
     border-radius: 25px;
     padding: 8px;
-    text-align: center;
+    /* max-height: 600px; */
 }
 .membership .icon{
-    width: 40px;
+    position: relative;
+    left: 10px;
+    width: 50px;
 }
 .manager {
     background: #fbfbfb;
@@ -53,6 +85,7 @@
     border-radius: 25px;
     padding: 8px;
     text-align: center;
+    min-height: 50%;
 }
 .billing {
     background: #fbfbfb;
@@ -76,5 +109,6 @@ body{
     background: #e6e7ed;
     display: flex;
     justify-content: center;
-    height: 620px;
+    height: 100vh;
+    margin: 0;
 }
