@@ -1,0 +1,80 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    grid-column-start: span 2;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.container div:first-child{
+    background: lightgreen;
+    grid-column-start: span 1;
+    grid-row-start: span 2;
+}
+
+.membership {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+.membership .icon{
+    width: 40px;
+}
+.manager {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+.trial-sessions {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+.reporting {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+.schedule {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+.levels {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+.billing {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+
+.custom-branding {
+    background: #fbfbfb;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+
+.grid-item:nth-child(3n) {
+    grid-column: 3;
+}
+
+body{
+    background: #e6e7ed;
+    display: flex;
+    justify-content: center;
+    height: 620px;
+}
